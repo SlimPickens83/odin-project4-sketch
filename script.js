@@ -10,11 +10,18 @@ for (let i = 0; i < rows; i++) {
 
     for (let i = 0; i < columns; i++) {
         const div = document.createElement("div");
+        div.addEventListener("mouseover", highlight);
         div.classList.add("grid");
-        container2.appendChild(div); 
+        container2.appendChild(div);
+
+        function highlight() {
+            div.style.backgroundColor = "black";
+        }
     }
     
 }
+
+
 
 button.addEventListener("click", () => {
 
@@ -24,6 +31,7 @@ button.addEventListener("click", () => {
     while (container.firstChild) {
 
         container.removeChild(container.firstChild);
+        
     }
 
     for (let i = 0; i < rows; i++) {
@@ -34,8 +42,13 @@ button.addEventListener("click", () => {
 
         for (let i = 0; i < columns; i++) {
             const div = document.createElement("div");
+            div.addEventListener("mouseover", highlight);
             div.classList.add("grid");
             container2.appendChild(div);
+
+            function highlight() {
+                div.style.backgroundColor = "black";
+            }
         }
 
     }
