@@ -1,9 +1,13 @@
+//  Initial declarations.
+
 const button = document.querySelector("button");
 const container = document.getElementById("container");
 let squares = 4;
 let userAns;
 let divColor;
 let surpriseColor;
+
+// This nested for loop creates the initial 4 x 4 grid of divs, including the ability to change color in reaction to mouse hovering.
 
 for (let i = 0; i < squares; i++) {
     const container2 = document.createElement("div");
@@ -22,6 +26,8 @@ for (let i = 0; i < squares; i++) {
     }
    
 }
+
+// The button logic grants user option to select both the grid style ("black", "grayscale", or "colorful" and the grid dimensions, which are always square)
 
 button.addEventListener("click", () => {
 
@@ -51,6 +57,7 @@ button.addEventListener("click", () => {
 
             }
         }    
+//  This block of code is where the problem is.
 
     } else if (userAns === "grayscale") {
             
@@ -99,6 +106,8 @@ button.addEventListener("click", () => {
     
 });
 
+
+// List of functions utilized.
 
 function dimensions() {
     let gStyle = prompt("Black, grayscale, or colorful?");
