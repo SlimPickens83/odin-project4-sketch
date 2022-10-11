@@ -1,10 +1,18 @@
 .grid {
     height: auto;
     width: max-content;
-    background-color: blue;
-    border: 1px solid white;
+    background-color: #FFFFFF;
+    margin: 1px;
     flex: 1;
-  }
+}
+
+.grid2 {
+    height: auto;
+    width: max-content;
+    background-color: #00000000;
+    margin: 1px;
+    flex: 1;
+}
 
 .container2 {
     display: flex;
