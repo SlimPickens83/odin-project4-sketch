@@ -66,7 +66,9 @@ button.addEventListener("click", () => {
         
             for (let j = 0; j < squares; j++) {
                 const div = document.createElement("div");
-                    div.classList.add("grid2");             
+                    div.classList.add("grid");
+                    div.style.backgroundColor = "#000000";
+                    div.style.opacity = 0;             
                     
                 container2.appendChild(div);
 
@@ -74,7 +76,8 @@ button.addEventListener("click", () => {
 
         }
 
-        grayscale("grid2");
+        grayscale("grid");
+
         
     }  else if (userAns === "colorful") {
 
@@ -133,10 +136,10 @@ function grayscale(x) {
 
 	gridDivs.forEach((gridDiv) => {
         gridDiv.addEventListener("mouseover", function (event) {
-            event.target.style.opacity = parseFloat(event.target.style.opacity + 0.1);
+            event.target.style.opacity = parseFloat(event.target.style.opacity) + 0.1;
 		});
 
-	});		
+	});	
 	
 }
 
