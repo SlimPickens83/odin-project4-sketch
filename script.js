@@ -14,7 +14,7 @@ for (let i = 0; i < squares; i++) {
     container2.classList.add("container2");
     container.appendChild(container2);
 
-    for (let i = 0; i < squares; i++) {
+    for (let j = 0; j < squares; j++) {
         const div = document.createElement("div");        
         div.classList.add("grid");
         div.addEventListener("mouseover", function(){
@@ -44,7 +44,7 @@ button.addEventListener("click", () => {
             container2.classList.add("container2");
             container.appendChild(container2);
 
-            for (let i = 0; i < squares; i++) {
+            for (let j = 0; j < squares; j++) {
                 const div = document.createElement("div");
                     div.classList.add("grid");
                     div.addEventListener("mouseover", function(){
@@ -86,7 +86,7 @@ button.addEventListener("click", () => {
             container2.classList.add("container2");
             container.appendChild(container2);
 
-            for (let i = 0; i < squares; i++) {
+            for (let j = 0; j < squares; j++) {
                 const div = document.createElement("div");
                     div.classList.add("grid");
                     div.addEventListener("mouseover", function(){
