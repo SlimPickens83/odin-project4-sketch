@@ -9,7 +9,8 @@
 .grid2 {
     height: auto;
     width: max-content;
-    background-color: #00000000;
+    background-color: #000000;
+    opacity: 0;
     margin: 1px;
     flex: 1;
 }
